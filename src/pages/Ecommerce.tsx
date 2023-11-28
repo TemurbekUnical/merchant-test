@@ -10,7 +10,6 @@ import {
      recentTransactions,
      weeklyStats
 } from "../data/fakeData";
-import product9 from "../data/product9.jpg";
 
 const DropDown = () => {
    // const { currentMode } = useGlobalContext();
@@ -361,7 +360,7 @@ const Ecommerce = () => {
                </div>
                <div className="mt-2">
                   <p className="text-md font-semibold mb-2">Leaders</p>
-                  <div className="flex gap-4">
+                  {/* <div className="flex gap-4">
                      {medicalproBranding.leaders.map((item, index) => (
                         <img
                            key={index}
@@ -370,7 +369,7 @@ const Ecommerce = () => {
                            alt=""
                         />
                      ))}
-                  </div>
+                  </div> */}
                </div>
                <div className="flex justify-between items-center mt-5 border-t-1 border-color">
                   <div className="mt-3">
@@ -398,7 +397,7 @@ const Ecommerce = () => {
                   </button>
                </div>
                <div className="mt-10">
-                  <img className="md:w-96 h-50 " src={product9} alt="" />
+                  {/* <img className="md:w-96 h-50 " src={product9} alt="" /> */}
                   <div className="mt-8">
                      <p className="font-semibold text-lg">
                         React 18 coming soon!

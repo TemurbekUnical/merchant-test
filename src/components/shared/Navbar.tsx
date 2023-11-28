@@ -5,9 +5,8 @@ import { FiShoppingCart } from "react-icons/fi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RiNotification3Line } from "react-icons/ri";
 
-import { Cart, Chat, Notification, Tooltip, UserProfile } from "@/components";
+import { Tooltip, UserProfile } from "@/components";
 import { useGlobalContext } from "@/contexts/GlobalContext";
-import avatar from "@/data/avatar.jpg";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }: any) => (
    <Tooltip content={title} position="BottomCenter">
@@ -75,11 +74,11 @@ const Navbar = () => {
                   className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
                   onClick={() => handleClick("userProfile")}
                >
-                  <img
+                  {/* <img
                      className="rounded-full w-8 h-8"
                      src={avatar}
                      alt="user-profile"
-                  />
+                  /> */}
                   <p>
                      <span className="text-gray-400 text-14">Hi,</span>{" "}
                      <span className="text-gray-400 font-bold ml-1 text-14">
@@ -90,9 +89,9 @@ const Navbar = () => {
                </div>
             </Tooltip>
 
-            {isClicked.cart && <Cart />}
-            {isClicked.chat && <Chat />}
-            {isClicked.notification && <Notification />}
+            {/* {isClicked.cart && <Cart />} */}
+            {/* {isClicked.chat && <Chat />} */}
+            {/* {isClicked.notification && <Notification />} */}
             {isClicked.userProfile && <UserProfile />}
          </div>
       </div>

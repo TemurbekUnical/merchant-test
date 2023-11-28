@@ -1,6 +1,6 @@
 import { IconContext } from "react-icons";
 import { MdOutlineCancel } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import { Tooltip } from "@/components";
 import { useGlobalContext } from "@/contexts/GlobalContext";
@@ -8,6 +8,9 @@ import { links } from "@/data/fakeData";
 
 const Sidebar = () => {
    const { currentColor } = useGlobalContext();
+   const location = useLocation();
+   console.log(location.pathname);
+   
 
    return (
       <div className="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 border-r border-gray-200">

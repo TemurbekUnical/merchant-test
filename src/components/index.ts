@@ -6,10 +6,7 @@ export { default as Sidebar } from "./shared/Sidebar";
 export { default as UserProfile } from "./shared/UserProfile";
 // ui
 export { default as Button } from "./ui/Button";
-export { default as Cart } from "./ui/Cart";
-export { default as Chat } from "./ui/Chat";
 export { default as Image } from "./ui/Image";
-export { default as Notification } from "./ui/Notification";
 export { default as Status } from "./ui/Status";
 export { default as Tooltip } from "./ui/Tooltip";
 export { default as Table } from "./ui/table";
