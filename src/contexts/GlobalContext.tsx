@@ -15,7 +15,6 @@ const useGlobal = () => {
      const [currentColor, setCurrentColor] = useState("#5E5FF5");
      const [currentMode, setCurrentMode] = useState<TTheme>("Light");
      const [themeSettings, setThemeSettings] = useState(false);
-     const [activeMenu, setActiveMenu] = useState(true);
      const [isClicked, setIsClicked] = useState(initialState);
 
      
@@ -39,7 +38,6 @@ const useGlobal = () => {
      return {
           currentColor,
           currentMode,
-          activeMenu,
           screenSize,
           isClicked,
           initialState,
@@ -48,7 +46,6 @@ const useGlobal = () => {
           setScreenSize,
           handleClick,
           setIsClicked,
-          setActiveMenu,
           setCurrentColor,
           setCurrentMode,
           setMode,

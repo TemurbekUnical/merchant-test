@@ -14,3 +14,4 @@ export { default as Image } from "./ui/Image";
 export { default as Status } from "./ui/Status";
 export { default as Table } from "./ui/table";
 export { default as Tooltip } from "./ui/Tooltip";
+export { default as Tabs } from "./ui/tabs";

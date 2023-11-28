@@ -1,11 +1,3 @@
-import Table from './container/Table';
+import Table from "./container/Table";
 
-const index = () => {
-  return (
-    <>
-      <Table />
-    </>
-  )
-}
-
-export default index
+export default Table;
