@@ -22,7 +22,7 @@ const ClientCard = ({ client, banks, order }: IClientCard) => {
             <div>
                <span className="text-gray-400 text-xs">Client</span>
                <p className="text-base font-semibold">
-                  {client?.firstName || "Client"}{" "}
+                  {client?.firstName || "Client"} {/* @ts-ignore */}
                   {client?.lastName?.at(0) || ""}.
                </p>
             </div>
