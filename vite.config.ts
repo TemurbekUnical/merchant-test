@@ -4,14 +4,17 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-     plugins: [react()],
-     resolve: {
-          alias: {
-               "@": path.resolve(__dirname, "./src/"),
+   plugins: [react()],
+   optimizeDeps: {
+      exclude: ["js-big-decimal"],
+   },
+   resolve: {
+      alias: {
+         "@": path.resolve(__dirname, "./src/"),
 
-               routes: `${path.resolve(__dirname, "./src/routes/")}`,
+         routes: `${path.resolve(__dirname, "./src/routes/")}`,
 
-               services: `${path.resolve(__dirname, "./src/services/")}`,
-          },
-     },
+         services: `${path.resolve(__dirname, "./src/services/")}`,
+      },
+   },
 });

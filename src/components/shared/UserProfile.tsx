@@ -2,7 +2,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 
 import { Button } from '..';
 import { useGlobalContext } from '@/contexts/GlobalContext';
-import { userProfileData } from '@/data/dummy';
+import { userProfileData } from '@/data/fakeData';
 import avatar from '@/data/avatar.jpg';
 
 const UserProfile = () => {

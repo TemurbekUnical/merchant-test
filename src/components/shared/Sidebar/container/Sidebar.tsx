@@ -1,10 +1,10 @@
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { IconContext } from "react-icons";
 import { MdOutlineCancel } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
+import { Tooltip } from "@/components";
 import { useGlobalContext } from "@/contexts/GlobalContext";
-import { links } from "@/data/dummy";
+import { links } from "@/data/fakeData";
 
 const Sidebar = () => {
      const { currentColor, activeMenu, setActiveMenu, screenSize } =
@@ -17,7 +17,7 @@ const Sidebar = () => {
      };
 
      return (
-          <div className="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
+          <div className="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 border-r border-gray-200">
                {activeMenu && (
                     <>
                          <div className="mt-7">
@@ -32,7 +32,7 @@ const Sidebar = () => {
                                    {/* <SiShopware /> */}B
                                    {/*  <span>Dashboard</span> */}
                               </Link>
-                              <TooltipComponent
+                              <Tooltip
                                    content="Menu"
                                    position="BottomCenter"
                               >
@@ -46,7 +46,7 @@ const Sidebar = () => {
                                    >
                                         <MdOutlineCancel />
                                    </button>
-                              </TooltipComponent>
+                              </Tooltip>
                          </div>
                          <div className="mt-10">
                               {links.map((item) => (
@@ -65,8 +65,8 @@ const Sidebar = () => {
                                              })}
                                              className={({ isActive }) =>
                                                   isActive
-                                                       ? "flex items-center w-12 h-12 gap-5 pl-[18px] pt-3 pb-2.5  text-white  text-md rounded-full"
-                                                       : "flex items-center w-12 h-12 gap-5 pl-[18px] pt-3 pb-2.5 text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray rounded-full"
+                                                       ? "flex items-center w-12 h-12 gap-5 pl-[19px] pt-3 pb-[12px]  text-white  text-md rounded-full"
+                                                       : "flex items-center w-12 h-12 gap-5 pl-[19px] pt-3 pb-[12px] text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray rounded-full"
                                              }
                                         >
                                              <IconContext.Provider
@@ -75,7 +75,7 @@ const Sidebar = () => {
                                                             "shared-class",
                                                        style: {
                                                             transform:
-                                                                 "scale(1.9)",
+                                                                 "scale(2.5)",
                                                        },
                                                   }}
                                              >

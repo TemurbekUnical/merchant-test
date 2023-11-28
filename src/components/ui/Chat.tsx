@@ -1,7 +1,7 @@
 import { MdOutlineCancel } from "react-icons/md";
 
 import { useGlobalContext } from "@/contexts/GlobalContext";
-import { chatData } from "@/data/dummy";
+import { chatData } from "@/data/fakeData";
 import { Button } from "..";
 
 const Chat = () => {

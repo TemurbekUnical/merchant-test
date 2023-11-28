@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 body {
-     margin: 0;
-     padding: 0;
-     font-family: "Open Sans", sans-serif;
+   margin: 0;
+   padding: 0;
+   /* font-family: "Open Sans", sans-serif; */
+   font-family: "Inter", sans-serif;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./components/ui/table/container/table.css);
+.page-classes {
+   @apply m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl;
+}

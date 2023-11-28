@@ -3,7 +3,7 @@ import { MdOutlineCancel } from "react-icons/md";
 
 import { useGlobalContext } from "@/contexts/GlobalContext";
 import { Button } from "../";
-import { cartData } from "@/data/dummy";
+import { cartData } from "@/data/fakeData";
 
 const Cart = () => {
      const { currentColor } = useGlobalContext();

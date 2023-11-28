@@ -2,7 +2,7 @@ import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 
 import { Button } from '..';
-import { chatData } from '@/data/dummy';
+import { chatData } from '@/data/fakeData';
 import { useGlobalContext } from '@/contexts/GlobalContext';
 
 const Notification = () => {

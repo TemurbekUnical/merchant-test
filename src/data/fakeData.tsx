@@ -1,12 +1,9 @@
 import { TSidebarLink } from "@/types/types.common";
-import { AiOutlineCalendar, AiOutlineShoppingCart } from "react-icons/ai";
-import { BiColorFill } from "react-icons/bi";
 import {
      BsBoxSeam,
      BsChatLeft,
      BsCurrencyDollar,
-     BsKanban,
-     BsShield,
+     BsShield
 } from "react-icons/bs";
 import {
      FiBarChart,
@@ -19,7 +16,9 @@ import { GrLocation } from "react-icons/gr";
 import { HiOutlineRefresh } from "react-icons/hi";
 import { IoMdContacts } from "react-icons/io";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
-import { RiContactsLine } from "react-icons/ri";
+// import { RiContactsLine } from "react-icons/ri";
+import { HiOutlineUserGroup } from "react-icons/hi2";
+
 import { TiTick } from "react-icons/ti";
 import avatar from "./avatar.jpg";
 import avatar2 from "./avatar2.jpg";
@@ -33,6 +32,20 @@ import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
 
+export const links: TSidebarLink[] = [
+     {
+          name: "customers",
+          icon: <HiOutlineUserGroup />,
+     },
+     {
+          name: "ecommerce",
+          icon: <FiShoppingBag />,
+     },
+     {
+          name: "employees",
+          icon: <IoMdContacts />,
+     },
+];
 export const gridOrderImage = (props: any) => (
      <div>
           <img
@@ -453,37 +466,6 @@ export const employeesGrid = [
           headerText: "Employee ID",
           width: "125",
           textAlign: "Center",
-     },
-];
-
-export const links: TSidebarLink[] = [
-     {
-          name: "ecommerce",
-          icon: <FiShoppingBag />,
-     },
-     {
-          name: "orders",
-          icon: <AiOutlineShoppingCart />,
-     },
-     {
-          name: "employees",
-          icon: <IoMdContacts />,
-     },
-     {
-          name: "customers",
-          icon: <RiContactsLine />,
-     },
-     {
-          name: "calendar",
-          icon: <AiOutlineCalendar />,
-     },
-     {
-          name: "kanban",
-          icon: <BsKanban />,
-     },
-     {
-          name: "color-picker",
-          icon: <BiColorFill />,
      },
 ];
 

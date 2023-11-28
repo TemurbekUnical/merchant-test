@@ -10,20 +10,14 @@
           "preview": "vite preview"
      },
      "dependencies": {
-          "@syncfusion/ej2": "^19.4.48",
-          "@syncfusion/ej2-react-calendars": "^19.4.48",
-          "@syncfusion/ej2-react-charts": "^19.4.50",
-          "@syncfusion/ej2-react-dropdowns": "^19.4.52",
-          "@syncfusion/ej2-react-grids": "^19.4.50",
-          "@syncfusion/ej2-react-inputs": "^19.4.52",
-          "@syncfusion/ej2-react-kanban": "^19.4.48",
-          "@syncfusion/ej2-react-popups": "^19.4.52",
-          "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
-          "@syncfusion/ej2-react-schedule": "^19.4.50",
+          "@emotion/react": "^11.11.1",
+          "@emotion/styled": "^11.11.0",
+          "@mui/material": "^5.14.18",
           "react": "^18.2.0",
           "react-dom": "^18.2.0",
           "react-icons": "^4.3.1",
-          "react-router-dom": "^6.20.0"
+          "react-router-dom": "^6.20.0",
+          "styled-components": "^6.1.1"
      },
      "devDependencies": {
           "@types/react": "^18.2.37",
