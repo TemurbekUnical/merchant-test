@@ -1,23 +1,15 @@
 import { useEffect } from "react";
-import { FiSettings } from "react-icons/fi";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import { Footer, Sidebar, ThemeSettings, Tooltip } from "./components";
+import { Footer, Sidebar } from "./components";
 import { Customers, Ecommerce } from "./pages";
 
 import { useGlobalContext } from "./contexts/GlobalContext";
 import { TTheme } from "./types/types.common";
 
 const App = () => {
-   const {
-      setCurrentColor,
-      setCurrentMode,
-      currentMode,
-      currentColor,
-      themeSettings,
-      setThemeSettings,
-   } = useGlobalContext();
+   const { setCurrentColor, setCurrentMode, currentMode } = useGlobalContext();
 
    useEffect(() => {
       const currentThemeColor = localStorage.getItem("colorMode");
@@ -32,24 +24,6 @@ const App = () => {
       <div className={currentMode === "Dark" ? "dark" : ""}>
          <BrowserRouter>
             <div className="flex relative dark:bg-main-dark-bg">
-               <div
-                  className="fixed right-4 bottom-4"
-                  style={{ zIndex: "1000" }}
-               >
-                  <Tooltip content="Settings" position="TopCenter">
-                     <button
-                        type="button"
-                        onClick={() => setThemeSettings(true)}
-                        style={{
-                           background: currentColor,
-                           borderRadius: "50%",
-                        }}
-                        className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
-                     >
-                        <FiSettings />
-                     </button>
-                  </Tooltip>
-               </div>
                <div className="w-28 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
                   <Sidebar />
                </div>
@@ -62,7 +36,7 @@ const App = () => {
                      {/* <Navbar /> */}
                   </div>
                   <div>
-                     {themeSettings && <ThemeSettings />}
+                     {/* {themeSettings && <ThemeSettings />} */}
 
                      <Routes>
                         {/* dashboard  */}
